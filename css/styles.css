@@ -36,6 +36,7 @@ em {
 
 cite {
   font-style: normal;
+  font-family: 'Holtwood One SC', serif;
 }
 
 small {
@@ -91,11 +92,110 @@ sub {
 }
 
 /* ============================================================================================== */
-/* Demo Styles - Do most of your work here.                                                       */
+/* Demo Styles - Do most of your work here. 
+/* Google Web Fonts - 
+/*   font-family: 'Holtwood One SC', serif;
+/*   font-family: 'Roboto', sans-serif;                                            */
 /* ============================================================================================== */
 
+body {
+  margin: 30px;
+}
 
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  zoom: 3.5;
+}
 
+/* h2 {
+  font-family: 'Holtwood One SC', serif;
+  font-weight: 400;
+} */
+
+footer {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+#introduction, #grid1, #career, #personal-life {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+  width: 100%;
+}
+.span_2_of_3 {
+  width: 66.1%;
+}
+.span_1_of_3 {
+  width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col { 
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_3_of_3 {
+    width: 100%; 
+  }
+  .span_2_of_3 {
+    width: 100%; 
+  }
+  .span_1_of_3 {
+    width: 100%;
+  }
+}
+
+/* Attempting Breakpoint to go down to 2 column grid at 835px =============================================
+
+@media only screen and (max-width: 835px) {
+  .col { 
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2 {
+    width: 100%; 
+  }
+  .span_1_of_2 {
+    width: 100%;
+  }
+}
+*/
 
 
 /* Clearfix class =============================================================================== */
